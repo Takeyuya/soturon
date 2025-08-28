@@ -1,0 +1,128 @@
+\documentclass[a4paper,9pt,twocolumn]{ltjsarticle} % ← lualatex ではなく ltjsarticle
+\usepackage[ipaex]{luatexja-preset}  % 日本語フォントの手当て（IPAex）
+\usepackage{ifthen}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+\ifthenelse{\equal{\course}{bachelor}}{%
+  \begin{titlepage}
+    \vspace*{10mm}
+    \begin{center}
+      {\huge\@gyear 年度\hspace{5mm}\@thesis\par}
+      \vfill
+      {\huge\bfseries\@title\par}
+      \vfill
+      \vspace{10mm}
+      {\Large\@date\par}
+      \vspace{20mm}
+      {\Large\@department\@departmentsfx\par}
+      {\Large (学生番号: \@studentid)\par}
+      \vspace{5mm}
+      {\LARGE\@author\par}
+      \vspace{55mm}
+      {\Large 和歌山大学\@faculty}
+      \vspace{10mm}
+    \end{center}
+  \end{titlepage}}{}%
+\ifthenelse{\equal{\course}{master}}{%
+  \begin{titlepage}
+    \begin{center}
+      \vspace*{8mm}
+      {\Large\@gyear 年度\hspace{5mm}\@thesis\par}
+      \vfill
+      {\huge\bfseries\@title\par}
+      \vfill
+      {\Large \@date\par}
+      \vspace{40mm}
+      {\Large 和歌山大学\@faculty\par}
+      \vspace{27mm}
+      {\Large 学生番号: \@studentid\par}
+      {\LARGE \@author\par}
+      \vspace*{28mm}
+    \end{center}
+  \end{titlepage}%
+  \begin{titlepage}
+    \begin{center}
+      \vspace*{8mm}
+      {\huge\@etitle\par}
+      \vspace{12mm}
+      {\Large by\par}
+      \vspace{9mm}
+      {\huge\@eauthor\par}
+      \vspace{27mm}
+      {\LARGE\@ethesis\par}
+      \vfill
+      {\Large \@efaculty\par}
+      \vspace{4mm}
+      {\Large Wakayama University\par}
+      \vspace{23mm}
+      {\Large \@edate\par}
+      \vspace*{14mm}
+    \end{center}
+  \end{titlepage}}{}%
+}
+
+%% 概要
+\def\abstract{\newpage\pagenumbering{roman}\section*{概 要}}
+\def\endabstract{}
+%% 目次
+\def\tableofcontents{%
+  \newpage
+  \section*{目 次\@mkboth{目 次}{目 次}}
+  \@starttoc{toc}}
+%% 図目次
+\def\listoffigures{%
+  \newpage
+  \section*{図 目 次\@mkboth{図 目 次}{図 目 次}}
+  \@starttoc{lof}}
+%% 表目次
+\def\listoftables{%
+  \newpage
+  \section*{表 目 次\@mkboth{表 目 次}{表 目 次}}
+  \@starttoc{lot}}
+%% 謝辞
+\def\acknowledgements{\newpage\section*{謝 辞}}
+\def\endacknowledgements{}
+%% 参考文献
+\def\thebibliography#1{%
+  \newpage
+  \section*{参 考 文 献\@mkboth{参 考 文 献}{参 考 文 献}}
+  \list{[\arabic{enumi}]}
+    {\settowidth{\labelwidth}{[#1]}
+     \leftmargin=\labelwidth
+     \advance\leftmargin by \labelsep
+     \usecounter{enumi}}
+  \def\newblock{\hskip .11em plus .33em minus .07em}
+  \sloppy
+  \clubpenalty=4000 \widowpenalty=4000
+  \sfcode`\.=1000\relax}
+\let\endthebibliography=\endlist
+\makeatother
+
+\makeatletter
+\def\course{bachelor}
+\def\@gyear{2025}
+\def\@thesis{卒業論文}
+\def\@title{DIDに基づいたIoTデータ管理システムの構築と評価}
+\def\@date{2026年2月10日}
+\def\@department{システム工学部}
+\def\@departmentsfx{システム工学科}
+\def\@studentid{60276128}
+\def\@author{竹内 結哉}
+\def\@faculty{システム工学部}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{はじめに}
+
+\section{背景技術}
+\subsection{分散型識別子(Decentralized Identifier:DID)}
+
+
+\end{document}
