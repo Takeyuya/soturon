@@ -5,6 +5,8 @@
 \usepackage{algorithmicx}
 \usepackage{algpseudocode}
 \usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{here}
 
 \makeatletter
 \renewcommand{\maketitle}{%
@@ -173,6 +175,16 @@ DID Documentと呼ばれる文書には公開鍵やサービスエンドポイ�
 Ganacheは開発用に特化したブロックチェーンシミュレータであり,高速なテスト実行やトランザクションの記録確認を容易に行うことができる.
 
 \section{システム構成}
+
+\subsection{全体像}
+本研究で提案するシステムの全体像を図\ref{fig:system-overview}に示す.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figure1.png}
+  \caption{提案システムの全体像}
+  \label{fig:system-overview}
+\end{figure}
 
 \section{実験と考察}
 
