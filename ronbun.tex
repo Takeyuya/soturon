@@ -224,6 +224,68 @@ Ganacheは開発用に特化したブロックチェーンシミュレータで�
 
 \section{実験と考察}
 
+\subsection{実験目的}
+本実験の目的は,提案システムにおける各処理の政党を定量的に評価し,
+実社会での適用に耐えうる処理速度を有しているかを検証することである.
+特に,IoTデータの分散保存にかかる処理時間,
+DIDおよびVCを用いたユーザー検証の処理時間,
+およびブロックチェーンにおけるトランザクション処理時間を測定対象とした.
+
+\subsection{実験環境}
+実験は以下の環境で行った.
+\begin{itemize}
+  \item OS:Windows 11 Home
+  \item CPU:AMD Ryzen 5 PRO 7530U with Radeon Graphics(2.00Hz)
+  \item メモリ:16GB
+  \item IPFS:go-ipfs v0.35.0
+  \item ブロックチェーン環境:Ganache v7.9.2
+  \item Solidity: v0.5.16
+  \item Node.js: v18.20.7
+  \item Truffle: v5.11.5
+  \item Web3.js: v1.10.0
+\end{itemize}
+
+\subsection{実験方法}
+IPFS,DID,VC,ブロックチェーンに対応する各処理について,
+ベンチマークスクリプトを用いて10回の測定を行い,平均時間を算出した.
+測定対象は以下のとおりである.
+
+\begin{enumerate}
+  \item IoTデータ(約2.7KB)のIPFSアップロード処理
+  \item ユーザーAに対するVC発酵処理
+  \item ユーザーAのVC検証処理
+  \item DID登録および発行に関するブロックチェーン処理
+\end{enumerate}
+
+\subsection{実験結果}
+表\ref{tab:benchmark}に各処理の平均処理時間を示す.
+
+\begin{table}[H]
+  \centering
+  \caption{各処理のベンチマーク結果(平均値)}
+  \label{tab:benchmark}
+  \resizebox{\linewidth}{!}{
+  \begin{tabular}{l|r|l}
+    \hline
+    処理内容 & 平均処理時間 & 備考 \\
+    \hline
+    IPFSアップロード & 63.0ms & 2.7KBデータ,0.044 MB/s \\
+    VC発行 & 5.99ms & 10回平均 \\
+    VC検証 & 93.7ms & 10回平均 \\
+    DID登録 & 88.2ms & gasUsed = 253{,}446 \\
+    DID発行 & 46.6ms & gasUsed = 49{,}928 \\
+    \hline
+  \end{tabular}}
+\end{table}
+
+IPFSへのアップロードはデータサイズ2.7KBの場合に平均63.0msであり,
+スループットは0.044 MB/sであった.
+VC発行処理は平均5.99msと高速に実行可能であったのに対し,VC検証処理は平均93.7msを要した.
+また,ブロックチェーンへのDID登録は平均88.2ms,DID発行処理は46.6msであり,
+いずれも100ms未満で処理可能であった.
+
+\subsection{考察}
+
 \section{まとめ}
 
 \bibliographystyle{junsrt}
