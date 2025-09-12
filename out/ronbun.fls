@@ -182,6 +182,8 @@ INPUT ./figure1.png
 INPUT ./figure1.png
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman9-regular.luc
+INPUT ./figure2.png
+INPUT ./figure2.png
 INPUT ./out/ronbun.bbl
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman10-italic.luc
