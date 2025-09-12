@@ -180,7 +180,7 @@ Ganacheは開発用に特化したブロックチェーンシミュレータで�
 
 \subsection{全体像}
 本研究で提案するシステムの全体像を図\ref{fig:system-overview}に示す.
-図に示すように,ユーザーAは自身のIoTデータをIPFSに格納し,その結果として得られるハッシュ値(以下CID)を,
+\ref{fig:system-overview}に示すように,ユーザーAは自身のIoTデータをIPFSに格納し,その結果として得られるハッシュ値(以下CID)を,
 自身の識別子であるDIDとともにブロックチェーンに記録する.
 その後,発行者であるユーザーBがユーザーAの真正性を保証するVerifiable Credential(以下VC)を発行し,
 検証者であるユーザーCがブロックチェーン上のDID情報とVCを突き合わせることで,ユーザーAの正当性を検証する.
@@ -211,7 +211,7 @@ Ganacheは開発用に特化したブロックチェーンシミュレータで�
 
 \subsection{データフロー}
 本システムの具体的な処理の流れを図\ref{fig:system-flow}に示す.
-図2に示すように,ユーザーAはIoTデータをIPFSに格納し,得られたCIDと自身のDIDをブロックチェーンに登録する.
+\ref{fig:system-overview}に示すように,ユーザーAはIoTデータをIPFSに格納し,得られたCIDと自身のDIDをブロックチェーンに登録する.
 その後,ユーザーBがVCを発行し,ユーザーAはこれをユーザーCに提示する.
 ユーザーCはブロックチェーン上のDID情報とVCを照合することで,ユーザーAの正当性を検証する.
 
@@ -219,6 +219,7 @@ Ganacheは開発用に特化したブロックチェーンシミュレータで�
   \centering
   \includegraphics[width=0.95\linewidth]{figure2.png}
   \caption{データフロー図}
+  \label{fig:system-flow}
 \end{figure}
 
 \section{実験と考察}
