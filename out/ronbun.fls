@@ -174,8 +174,6 @@ OUTPUT out/ronbun.pdf
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmsans12-regular.luc
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc
-INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmsans10-regular.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmmono10-regular.luc
 INPUT ./figure1.png

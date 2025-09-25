@@ -1,4 +1,4 @@
-\documentclass[a4paper,9pt,twocolumn]{ltjsarticle} % ← lualatex ではなく ltjsarticle
+\documentclass[a4paper,9pt,onecolumn]{ltjsarticle} % ← lualatex ではなく ltjsarticle
 \usepackage[ipaex]{luatexja-preset}  % 日本語フォントの手当て（IPAex）
 \usepackage{ifthen}
 \usepackage{algorithm}
@@ -168,7 +168,7 @@ Aliら\cite{cite1}は,ブロックチェーンとIPFSを組み合わせた\textb
 Ethereumはコンソーシアムレベルで通信効率に優れるものの,PoWに基づく高い計算コストが問題点として指摘されている.
 このように,ブロックチェーンのコンセンサスメカニズムの選択は,IoT分散アーキテクチャの実用性に直接影響を与えることが明らかとなっている.
 
-また,\cite{cite2}では,IoTセンサーから得られるデータを\textbf{二重チャネル（Dual Channel）}で配信するミドルウェアが提案されている.
+また,\cite{cite2}では,IoTセンサーから得られるデータを\textbf{二重チャネル(Dual Channel)}で配信するミドルウェアが提案されている.
 一方はEthereumとIPFSを用いたインテグリティチャネルで,データ完全性を保証する.
 もう一方はMQTTを利用したリアルタイムチャネルで,低遅延かつ高速な配信を実現する.
 この方式は,後からインテグリティチャネルを参照することで,リアルタイムチャネル経由で受け取ったデータの改ざん検出が可能になる点に特徴がある.

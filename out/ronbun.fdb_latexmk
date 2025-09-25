@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex out/ronbun"] 1758763653.64231 "out/ronbun.aux" "out/ronbun.bbl" "out/ronbun" 1758763671.19511 0
+["bibtex out/ronbun"] 1758777893.12832 "out/ronbun.aux" "out/ronbun.bbl" "out/ronbun" 1758777903.50683 0
   "./references.bib" 1758762516 2388 0c1a7c3a67c2fc09c063b8e3a5c3564f ""
   "junsrt.bst" 0 -1 0 ""
-  "out/ronbun.aux" 1758763668 2716 0a715e4e304be613d70b108422d7f6f0 "lualatex"
+  "out/ronbun.aux" 1758777900 2716 79ddad250d20803940fd629af8c1b217 "lualatex"
   (generated)
   "out/ronbun.bbl"
   "out/ronbun.blg"
   (rewritten before read)
-["lualatex"] 1758763662.84099 "c:/Users/takeu/OneDrive/デスクトップ/研究室/Tex/ronbun.tex" "out/ronbun.pdf" "ronbun" 1758763671.19646 0
+["lualatex"] 1758777894.24228 "c:/Users/takeu/OneDrive/デスクトップ/研究室/Tex/ronbun.tex" "out/ronbun.pdf" "ronbun" 1758777903.50815 0
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_haranoajigothic-medium.luc" 1755256921 321567 fe953ead66a4762c19293edee7952982 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_haranoajimincho-regular.luc" 1755256914 322628 02ec61d1b47f0d1cd67a60e6a9568ef7 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_ipaexgothic.luc" 1755340500 320653 aa47c91791d492097f2a75642e5179f8 ""
@@ -24,7 +24,6 @@
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman7-regular.luc" 1757670764 17367 298c438d3c0617847dcc4c2a68c804a7 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman8-regular.luc" 1755256915 17367 298c438d3c0617847dcc4c2a68c804a7 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman9-regular.luc" 1757576081 17367 298c438d3c0617847dcc4c2a68c804a7 ""
-  "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmsans10-regular.luc" 1756363135 17367 298c438d3c0617847dcc4c2a68c804a7 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmsans12-regular.luc" 1755256921 17367 298c438d3c0617847dcc4c2a68c804a7 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc" 1755256840 1643772 7e9646428abcb8532588e26c12266b03 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/ltj-jisx0208.luc" 1755256915 93919 3545f967e0ab307c2cc8c3e8cb314d7c ""
@@ -45,11 +44,10 @@
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc" 1757670764 128367 9c485a9018a18bff13738527100c4d19 ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1755256915 128138 77b387f4f0ed27ee31a09d40447e36aa ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc" 1757576081 127952 ef1ec5a29b8c8c08eb15c73f1d79da7c ""
-  "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc" 1756363135 127638 4d96647ae4b6d48aae5563a7df629406 ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.luc" 1755256921 128157 9155534ef79335904b884167d49a0aef ""
-  "C:/texlive/2024/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1757670765 2180 c8d5a779ee6b8d510a1ded86bdefe8ca ""
+  "C:/texlive/2024/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1758777888 2276 ee68942c8b4758d8910345000d589f1f ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1755256905 320663 e4e8eab2c9c6e782e872b319fe771467 ""
-  "c:/Users/takeu/OneDrive/デスクトップ/研究室/Tex/ronbun.tex" 1758763659 18070 55e6a69d8544c67e0424446e4de05221 ""
+  "c:/Users/takeu/OneDrive/デスクトップ/研究室/Tex/ronbun.tex" 1758777881 18066 4ea6b6971a362e98e43442e8cfbdd465 ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1734072300 64684 c6f5a48921f83c1a51d9384f785ddd5a ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1734072300 111240 1d60e9def74b1102bb4defa7cb772ee3 ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1734072300 118828 5d91d27a335c65bda4818de63abc25ce ""
@@ -58,7 +56,6 @@
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf" 1734072300 110400 fcd786b88ef2ed507d57d8a4a31065e3 ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf" 1734072300 110248 0524e9fd4e00179f5d95f2bba63c8192 ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf" 1734072300 112680 58aba3776a198b7a968d5ef9fa96ffb1 ""
-  "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf" 1734072300 95128 317da301f5d16ce70da8e5df556bc592 ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf" 1734072300 95160 a298a0c894450a41822166397e6bc032 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1734069867 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1734070574 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -211,9 +208,9 @@
   "c:/texlive/2024/texmf-var/web2c/luahbtex/lualatex.fmt" 1734075076 5647631 d4e062acbaf00a906c475a7c22e960b8 ""
   "figure1.png" 1757575357 217609 eea45abbf2327406fc9520bd9ac1b2af ""
   "figure2.png" 1757664374 23391 8eded97447ac0d61fb8b6a30f980686e ""
-  "out/ronbun.aux" 1758763668 2716 0a715e4e304be613d70b108422d7f6f0 "lualatex"
-  "out/ronbun.bbl" 1758763654 684 49982c1ea61378eeaa4755e201fd293a "bibtex out/ronbun"
-  "ronbun.tex" 1758763659 18070 55e6a69d8544c67e0424446e4de05221 ""
+  "out/ronbun.aux" 1758777900 2716 79ddad250d20803940fd629af8c1b217 "lualatex"
+  "out/ronbun.bbl" 1758777894 684 49982c1ea61378eeaa4755e201fd293a "bibtex out/ronbun"
+  "ronbun.tex" 1758777881 18066 4ea6b6971a362e98e43442e8cfbdd465 ""
   (generated)
   "out/ronbun.aux"
   "out/ronbun.log"
