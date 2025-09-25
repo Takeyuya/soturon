@@ -3,45 +3,45 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ronbun.aux
 The style file: junsrt.bst
 Database file #1: references.bib
-You've used 1 entry,
+You've used 2 entries,
             2270 wiz_defined-function locations,
-            546 strings with 4334 characters,
-and the built_in function-call counts, 285 in all, are:
-= -- 20
-> -- 10
-< -- 0
-+ -- 4
-- -- 3
-* -- 13
-:= -- 45
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 1
+            555 strings with 4608 characters,
+and the built_in function-call counts, 792 in all, are:
+= -- 65
+> -- 30
+< -- 1
++ -- 11
+- -- 9
+* -- 41
+:= -- 109
+add.period$ -- 8
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 19
-empty$ -- 30
-format.name$ -- 6
-if$ -- 68
+cite$ -- 2
+duplicate$ -- 47
+empty$ -- 73
+format.name$ -- 18
+if$ -- 195
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 6
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 11
+skip$ -- 34
 stack$ -- 0
-substring$ -- 0
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 32
+swap$ -- 11
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1
-width$ -- 2
-write$ -- 15
-is.kanji.str$ -- 12
+while$ -- 6
+width$ -- 3
+write$ -- 28
+is.kanji.str$ -- 29
