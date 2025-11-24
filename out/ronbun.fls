@@ -1,6 +1,6 @@
-PWD c:/Users/takeu/OneDrive/デスクトップ/研究室/Tex
+PWD c:/Users/takeu/Desktop/研究室/卒論
 INPUT c:/texlive/2024/texmf-var/web2c/luahbtex/lualatex.fmt
-INPUT c:/Users/takeu/OneDrive/デスクトップ/研究室/Tex/ronbun.tex
+INPUT c:/Users/takeu/Desktop/研究室/卒論/ronbun.tex
 OUTPUT out/ronbun.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/tex-ini-files/lualatexquotejobname.lua
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/ltluatex.lua
@@ -146,8 +146,8 @@ INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_ipaexgothic.luc
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/algorithms/algorithm.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
@@ -176,12 +176,14 @@ INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmsans12-regular.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmmono10-regular.luc
-INPUT ./figure1.png
-INPUT ./figure1.png
+INPUT ./figures/figure1.png
+INPUT ./figures/figure1.png
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman9-regular.luc
-INPUT ./figure2.png
-INPUT ./figure2.png
+INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc
+INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmsans10-regular.luc
+INPUT ./figures/figure2.png
+INPUT ./figures/figure2.png
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman7-regular.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
@@ -202,3 +204,4 @@ INPUT ./out/ronbun.bbl
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman10-italic.luc
 INPUT ./out/ronbun.aux
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

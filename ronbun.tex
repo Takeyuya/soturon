@@ -2,11 +2,14 @@
 \usepackage[ipaex]{luatexja-preset}  % 日本語フォントの手当て（IPAex）
 \usepackage{ifthen}
 \usepackage{algorithm}
-\usepackage{algorithmicx}
 \usepackage{algpseudocode}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{here}
+\usepackage{algpseudocode}
+
+
+
 
 \makeatletter
 \renewcommand{\maketitle}{%
@@ -130,23 +133,22 @@
 第二に,セキュリティ上の問題である.中央サーバーは単一障害点となりやすく,攻撃対象として脆弱である.
 第三に,プライバシー保護の問題である.個人情報を含むIoTデータが集中することで,情報漏洩時の被害が甚大化するリスクがある.
 
-これらの課題を解決するために,本研究ではユーザー主権型IDに基づいた分散型データ管理システムの実現を目指す.
+これらの課題を解決するために,本研究ではユーザ主権型IDに基づいた分散型データ管理システムの実現を目指す.
 本システムは,以下の三点を重視して設計されている.
 
 \begin{enumerate}
 \item データの分散管理：中央集権型から脱却し,分散型ファイルシステムであるInterPlanetary File System(以下IPFS)を用いることで,
       単一障害点を排除しシステムの堅牢性を向上させる.
-\item ユーザーの真正性確保：分散管理環境におけるなりすまし防止のため,分散型識別子であるDecentralized Identity(以下DID)を活用し,
+\item ユーザの真正性確保：分散管理環境におけるなりすまし防止のため,分散型識別子であるDecentralized Identity(以下DID)を活用し,
       データ所有者の身元を保証する.
 \item データの信頼性と改ざん防止：ブロックチェーンを活用し,データが改ざんされていないことを検証可能とする.
 \end{enumerate}
-
 以上の要素を組み合わせることで,IoTデータに対する分散型かつ信頼可能な管理基盤を構築することを目指す.
 
 \section{関連研究}
 IoTデータ管理におけるプライバシー確保は,従来より大きな研究課題とされている.
 現行のIoTシステムは,多くが集中型のクライアントサーバーモデルに依存しており,生成される膨大なデータはサービスプロバイダを介して管理される.
-このような集中型モデルは,ユーザーの行動履歴や個人情報が第三者に漏洩・不正利用されるリスクを内包している.
+このような集中型モデルは,ユーザの行動履歴や個人情報が第三者に漏洩・不正利用されるリスクを内包している.
 この問題に対処するため,近年ではブロックチェーンを基盤とした分散型データ管理アーキテクチャの研究が進められている.
 
 IoTとブロックチェーンの統合に関する典型的なユースケースとしては,
@@ -196,7 +198,7 @@ IPFSは,分散型のファイルシステムであり,コンテンツ指向の�
 DIDは,自己主権型アイデンティティを実現するための分散型識別子である.
 従来のインターネットにおける認証・識別は,中央集権的な認証局やサービス提供者に依存していたため,
 単一障害点や利用者のプライバシー保護に課題があった.
-これに対しDIDは,ユーザー自身が管理可能な識別子を提供することで,第三者に依存せずに真正性を保証できる仕組みを実現する.
+これに対しDIDは,ユーザ自身が管理可能な識別子を提供することで,第三者に依存せずに真正性を保証できる仕組みを実現する.
 DID Documentと呼ばれる文書には公開鍵やサービスエンドポイントなどが含まれ,これにより利用者の認証やデータ検証を行うことができる.
 
 \subsection{ブロックチェーン}
@@ -208,62 +210,98 @@ DID Documentと呼ばれる文書には公開鍵やサービスエンドポイ�
 本研究では実験環境としてEthereum互換のローカルブロックチェーン環境である\texttt{Ganache}を使用した.
 Ganacheは開発用に特化したブロックチェーンシミュレータであり,高速なテスト実行やトランザクションの記録確認を容易に行うことができる.
 
+さらに,既存研究においても議論されているように,Proof-of-Work(以下PoW)はエネルギー消費が大きく,
+リソース制約のあるIoT環境には適さないことが指摘されている\cite{cite2}.
+そのため,本研究においてもPoWベースのブロックチェーンは採用せず,より実装や評価に適したEthereum環境を主に使用することとした.
+
 \section{システム構成}
 本研究で提案するシステムは,IoTデータを分散的に管理するために,DID,IPFS,およびブロックチェーンを連携させたものである.
 本章では,まずシステム全体の流れを示した後,各要素の役割について説明する.
 
-\subsection{全体像}
+\subsection{システムの概要}
 本研究で提案するシステムの全体像を図\ref{fig:system-overview}に示す.
-\ref{fig:system-overview}に示すように,ユーザーAは自身のIoTデータをIPFSに格納し,その結果として得られるハッシュ値(以下CID)を,
+\ref{fig:system-overview}に示すように,ユーザAは自身のIoTデータをIPFSに格納し,その結果として得られるハッシュ値(以下CID)を,
 自身の識別子であるDIDとともにブロックチェーンに記録する.
-その後,発行者であるユーザーBがユーザーAの真正性を保証するVerifiable Credential(以下VC)を発行し,
-検証者であるユーザーCがブロックチェーン上のDID情報とVCを突き合わせることで,ユーザーAの正当性を検証する.
+その後,発行者がIoTデータの真正性を保証するVerifiable Credential(以下VC)を発行し,
+検証者であるユーザBがブロックチェーン上のDID情報とVCを突き合わせることで,ユーザAの正当性を検証する.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
-  \includegraphics[width=0.9\linewidth]{figure1.png}
-  \caption{提案システムの全体像}
+  \includegraphics[width=0.9\linewidth]{figures/figure1.png}
+  \caption{提案システムの概要図}
   \label{fig:system-overview}
 \end{figure}
 
-\subsection{ユーザーA(データ所有者)}
-ユーザーAは,自身の識別子としてDIDを保持し,その検証用情報(公開鍵など)をブロックチェーンに格納する.
-さらに,所持しているIoTデータをIPFSに格納し,IPFSから返されるCIDを取得する.
+\subsubsection{データ所有者(ユーザA)}
+ユーザAは,自身の識別子としてDIDを保持し,その検証用情報(公開鍵など)をブロックチェーンに格納する.
+さらに,保持しているIoTデータをIPFSに格納し,IPFSから返されるCIDを取得する.
 このCIDはデータの一意なハッシュ値であり,データ改ざん検知に利用できる.
-ユーザーAは,CIDと自身のDIDを組み合わせてブロックチェーンに登録することで,データの所有者であることを保証する.
+ユーザAは,CIDと自身のDIDを組み合わせてブロックチェーンに登録することで,データの所有者であることを保証する.
 
-\subsection{ユーザーB(発行者)}
-ユーザーBは,発行者として,ユーザーAの真正性を保証する役割を担う.
-ユーザーBは,ユーザーAのDIDに基づきVCを発行する.
-このVCには,ユーザーAが正当な主体であることを示す署名が含まれており,第三者による検証を可能にする.
+\subsubsection{発行者(企業など)}
+発行者とは,ユーザAに対してVCを発行する主体である.
+本研究ではユーザAが所持しているIoT機器の製造元企業などを想定している.
+発行者はユーザAが保持しているIoTデータが自社製品によって生成されたデータであることを確認し,その真正性を保証するVCをユーザAに発行する.
 
-\subsection{ユーザーC(検証者)}
-ユーザーCは,検証者として,ユーザーAから提示されたVCを受け取り,
-ブロックチェーン上に記録されたDID検証用情報と突き合わせて検証を行う.
-これにより,ユーザーAが正当なデータ所有者であることを確認できる.
-この仕組みによって,IoTデータの分散的な流通においてもユーザーの信頼性とデータの真正性が担保される.
+\subsubsection{検証者(ユーザC)}
+検証者は,ユーザAとIoTデータを取引する相手,すなわちデータの受領者を想定している.
+検証者は,ユーザAから提示されたVCを受け取り,ブロックチェーン上のDID情報と照合することで,ユーザAが真正なデータ所有者であることや,
+IoTデータについて企業が保証していることについて確認する.
 
 \subsection{データフロー}
 本システムの具体的な処理の流れを図\ref{fig:system-flow}に示す.
-\ref{fig:system-overview}に示すように,ユーザーAはIoTデータをIPFSに格納し,得られたCIDと自身のDIDをブロックチェーンに登録する.
-その後,ユーザーBがVCを発行し,ユーザーAはこれをユーザーCに提示する.
-ユーザーCはブロックチェーン上のDID情報とVCを照合することで,ユーザーAの正当性を検証する.
+\ref{fig:system-overview}に示すように,ユーザAはIoTデータをIPFSに格納し,得られたCIDと自身のDIDをブロックチェーンに登録する.
+その後,ユーザBがVCを発行し,ユーザAはこれをユーザCに提示する.
+ユーザCはブロックチェーン上のDID情報とVCを照合することで,ユーザAの正当性を検証する.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
-  \includegraphics[width=0.95\linewidth]{figure2.png}
+  \includegraphics[width=0.95\linewidth]{figures/figure2.png}
   \caption{データフロー図}
   \label{fig:system-flow}
 \end{figure}
 
+\subsection{システムフロー}
+\begin{algorithm}[H]
+\caption{DIDドキュメント登録処理}
+\begin{algorithmic}[1]
+\Require EthereumノードURL, DIDRegistry(ABI, Address)
+\Ensure UserA/CompanyのDID Documentがブロックチェーンに登録される
+
+\State web3 $\gets$ Web3(ノードURL)
+\State accounts $\gets$ web3.eth.getAccounts()
+\State userA $\gets$ accounts[0]
+\State company $\gets$ accounts[1]
+
+\State didUserA $\gets$ ``did:example:userA''
+\State didCompany $\gets$ ``did:example:company''
+
+\State didDocUserA   $\gets$ \{id: didUserA, controller: userA\}
+\State didDocCompany $\gets$ \{id: didCompany, controller: company\}
+
+\State JSONとして didDocUserA を保存
+\State JSONとして didDocCompany を保存
+
+\State networkId $\gets$ web3.eth.net.getId()
+\State registry $\gets$ Contract(ABI, Address)
+
+\State registry.registerDIDDocument(didUserA, didDocUserA) を userA から send
+\State registry.registerDIDDocument(didCompany, didDocCompany) を company から send
+
+\end{algorithmic}
+\end{algorithm}
+
+
 \section{実験と考察}
 
 \subsection{実験目的}
-本実験の目的は,提案システムにおける各処理の政党を定量的に評価し,
-実社会での適用に耐えうる処理速度を有しているかを検証することである.
-特に,IoTデータの分散保存にかかる処理時間,
-DIDおよびVCを用いたユーザー検証の処理時間,
-およびブロックチェーンにおけるトランザクション処理時間を測定対象とした.
+本研究の実験目的は,提案システムが実社会の運用に耐えうる性能と有効性を備えているかを検証することである.
+まず,IoTデータの記録からVCによる検証までの一連の処理を再現し,DID・VC・IPFS・ブロックチェーンを統合した
+システムとして正しく動作することを確認する.
+また,分散ストレージとして利用するIPFSに対して,ファイルアップロード処理の処理時間・スループット・エラー率を測定し,
+膨大なデータ量を扱うIoT環境において実用的に運用可能かを評価する.
+さらに,DIDおよびVCを用いたユーザ検証処理,およびブロックチェーンへのトランザクション記録に要する処理時間を測定し,
+提案システム全体の性能を定量的に評価する.
 
 \subsection{実験環境}
 実験は以下の環境で行った.
@@ -280,43 +318,8 @@ DIDおよびVCを用いたユーザー検証の処理時間,
 \end{itemize}
 
 \subsection{実験方法}
-IPFS,DID,VC,ブロックチェーンに対応する各処理について,
-ベンチマークスクリプトを用いて10回の測定を行い,平均時間を算出した.
-測定対象は以下のとおりである.
-
-\begin{enumerate}
-  \item IoTデータ(約2.7KB)のIPFSアップロード処理
-  \item ユーザーAに対するVC発酵処理
-  \item ユーザーAのVC検証処理
-  \item DID登録および発行に関するブロックチェーン処理
-\end{enumerate}
 
 \subsection{実験結果}
-表\ref{tab:benchmark}に各処理の平均処理時間を示す.
-
-\begin{table}[H]
-  \centering
-  \caption{各処理のベンチマーク結果(平均値)}
-  \label{tab:benchmark}
-  \resizebox{\linewidth}{!}{
-  \begin{tabular}{l|r|l}
-    \hline
-    処理内容 & 平均処理時間 & 備考 \\
-    \hline
-    IPFSアップロード & 63.0ms & 2.7KBデータ,0.044 MB/s \\
-    VC発行 & 5.99ms & 10回平均 \\
-    VC検証 & 93.7ms & 10回平均 \\
-    DID登録 & 88.2ms & gasUsed = 253{,}446 \\
-    DID発行 & 46.6ms & gasUsed = 49{,}928 \\
-    \hline
-  \end{tabular}}
-\end{table}
-
-IPFSへのアップロードはデータサイズ2.7KBの場合に平均63.0msであり,
-スループットは0.044 MB/sであった.
-VC発行処理は平均5.99msと高速に実行可能であったのに対し,VC検証処理は平均93.7msを要した.
-また,ブロックチェーンへのDID登録は平均88.2ms,DID発行処理は46.6msであり,
-いずれも100ms未満で処理可能であった.
 
 \subsection{考察}
 
