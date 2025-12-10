@@ -8,9 +8,6 @@
 \usepackage{here}
 \usepackage{algpseudocode}
 
-
-
-
 \makeatletter
 \renewcommand{\maketitle}{%
 \ifthenelse{\equal{\course}{bachelor}}{%
@@ -248,49 +245,117 @@ Ganacheは開発用に特化したブロックチェーンシミュレータで�
 検証者は,ユーザAから提示されたVCを受け取り,ブロックチェーン上のDID情報と照合することで,ユーザAが真正なデータ所有者であることや,
 IoTデータについて企業が保証していることについて確認する.
 
-\subsection{データフロー}
-本システムの具体的な処理の流れを図\ref{fig:system-flow}に示す.
-\ref{fig:system-overview}に示すように,ユーザAはIoTデータをIPFSに格納し,得られたCIDと自身のDIDをブロックチェーンに登録する.
-その後,ユーザBがVCを発行し,ユーザAはこれをユーザCに提示する.
-ユーザCはブロックチェーン上のDID情報とVCを照合することで,ユーザAの正当性を検証する.
+\section{システム全体のフロー}
 
-\begin{figure}[t]
+本研究で構築したシステムは,IoTデータを提供するユーザA,データの真正性を確認する企業(発行者),および最終的にVCを検証する第三者(検証者)により構成される.
+システムの処理は,\textbf{登録フェーズ}と\textbf{検証フェーズ}の2つに大別される.
+
+登録フェーズではDID・DID Document・IoTデータがブロックチェーンおよびIPFSに記録され,企業によるVC発行までが行われる.
+一方,検証フェーズでは,提示されたVCの署名検証を通じてユーザAが真正なデータ提供者であることを確認し,安全なデータ取引を可能にする.
+
+以下では,両フェーズの詳細な処理について説明する.
+
+\subsection{登録フェーズ}
+
+登録フェーズの全体像を図\ref{fig:system_flowchart_regist}に示す.
+本フェーズは,DIDの生成・登録,IoTデータの保存,CIDの登録,および企業によるVC発行,ユーザAによるVCへの署名までの流れで構成される.
+
+\subsubsection{DIDの生成とDID Documentの登録}
+
+まず,ユーザAおよび企業はそれぞれDIDを生成し,公開鍵などの識別情報を含むDID Documentを作成する.
+作成したaDID Documentはスマートコントラクト(registerDIDDocument)を通じてブロックチェーンへ登録される.
+これにより,各主体の公開鍵が台帳上に保持され,後続処理における署名検証の基盤が整備される.
+
+\subsubsection{IoTデータの保存とCIDの取得}
+
+次に,ユーザAは自身が保有するIoTデータをIPFSに保存する.
+保存されたデータに対し,IPFSは一意のCID(Content Identifier)を返却する.
+
+\subsubsection{CIDとDIDのブロックチェーンへの記録}
+
+ユーザAは取得したCIDと自身のDIDをスマートコントラクト(registerDIDDocument)を用いてブロックチェーンへ登録する.
+これにより,「どのDIDがどのIoTデータの所有者であるか」が改ざん耐性を持って記録され,第三者は所有者を検証可能となる.
+
+\subsubsection{企業によるデータ真正性の確認とVC発行}
+
+企業は,ブロックチェーン上のDIDとCIDの整合性を確認し,ユーザAが登録したデータが真正であるかを検証する.
+正当性が確認された場合,企業はユーザA向けにVCを発行する.
+VCには企業のDIDによる署名が付与され,内容の真正性が保証される.
+
+\subsubsection{ユーザAによるVCへの追加署名}
+
+最後に,ユーザAは自身のDIDに紐づく秘密鍵を用いてVCに追加署名を行う.
+これにより,企業とユーザAの双方が署名したVCが完成し,検証フェーズにおいて提示・検証可能な証明情報となる.
+
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\linewidth]{figures/figure2.png}
-  \caption{データフロー図}
-  \label{fig:system-flow}
+  \includegraphics[height=0.9\textheight, keepaspectratio]{figures/flowchart_regist.png}
+  \caption{登録フェーズのフローチャート}
+  \label{fig:system_flowchart_regist}
 \end{figure}
 
-\subsection{システムフロー}
-\begin{algorithm}[H]
-\caption{DIDドキュメント登録処理}
+\subsection{検証フェーズ}
+
+検証フェーズの処理全体を図\ref{fig:system_flowchart_validate}に示す.
+本フェーズでは,ユーザAが提示したVCに含まれる署名を順に検証し,データ提供者の正当性を確認する.
+
+\subsubsection{VCの提示と受領}
+
+ユーザAは完成したVCを検証者へ提示する.
+検証者はVCを受け取り,内容に含まれる署名情報とDID情報を確認する.
+
+\subsubsection{企業の署名検証}
+
+検証者はまずVCに含まれる企業の署名を検証する.
+署名の公開鍵は,ブロックチェーンへ登録された企業のDID Documentから取得される.
+署名が不一致であった場合,VCは不正と判断され処理を終了する.
+
+\subsubsection{ユーザAの署名検証}
+
+企業の署名が正当であった場合,次にユーザAの署名が検証される.
+ユーザAの公開鍵は同様にDID Documentから取得でき,署名が一致する場合,ユーザAがIoTデータの正当な保有者であることが確認される.
+不一致の場合,処理は終了する.
+
+\subsubsection{データの取引の実行}
+
+企業およびユーザAの署名がいずれも正当であれば,検証者はユーザAが真正なデータ提供者であると判断できる.
+この確認を基に,検証者はユーザAと安全にデータ取引を実行する.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=0.9\textheight, keepaspectratio]{figures/flowchart_valid.png}
+  \caption{検証フェーズのフローチャート}
+  \label{fig:system_flowchart_validate}
+\end{figure}
+
+\subsection{スマートコントラクトによる登録処理}
+
+本研究で使用したスマートコントラクトでは,ユーザのDID DocumentおよびIoTデータ(CID)をブロックチェーンに記録するために\texttt{registerDIDDocument}および\texttt{registerIoTData}の2つの関数を提供している.
+それぞれの処理内容を擬似コードとして以下に示す.
+
+\begin{algorithm}
+\caption{DID Documentの登録処理(registerDIDDocument)}
+\label{alg:register_did}
 \begin{algorithmic}[1]
-\Require EthereumノードURL, DIDRegistry(ABI, Address)
-\Ensure UserA/CompanyのDID Documentがブロックチェーンに登録される
-
-\State web3 $\gets$ Web3(ノードURL)
-\State accounts $\gets$ web3.eth.getAccounts()
-\State userA $\gets$ accounts[0]
-\State company $\gets$ accounts[1]
-
-\State didUserA $\gets$ ``did:example:userA''
-\State didCompany $\gets$ ``did:example:company''
-
-\State didDocUserA   $\gets$ \{id: didUserA, controller: userA\}
-\State didDocCompany $\gets$ \{id: didCompany, controller: company\}
-
-\State JSONとして didDocUserA を保存
-\State JSONとして didDocCompany を保存
-
-\State networkId $\gets$ web3.eth.net.getId()
-\State registry $\gets$ Contract(ABI, Address)
-
-\State registry.registerDIDDocument(didUserA, didDocUserA) を userA から send
-\State registry.registerDIDDocument(didCompany, didDocCompany) を company から send
-
+\Require DID, DID Document(JSON形式)
+\State 呼び出し元アドレスを取得する(これをユーザ識別子として扱う)
+\State DID Documentを以下の形式で保存する:
+\State \hspace{3mm} \texttt{records[呼び出し元アドレス].append( (DID, DID\_Document) )}
+\State DID登録イベントを発行する
 \end{algorithmic}
 \end{algorithm}
 
+\begin{algorithm}[H]
+\caption{IoTデータ(CID)の登録処理(registerIoTData)}
+\label{alg:register_iot}
+\begin{algorithmic}[1]
+\Require DID, CID(IPFSで取得したハッシュ値)
+\State 呼び出し元アドレスを取得する
+\State IoTデータを以下の形式で保存する:
+\State \hspace{3mm} \texttt{iotData[呼び出し元アドレス].append( (DID, CID) )}
+\State IoTデータ登録イベントを発行する
+\end{algorithmic}
+\end{algorithm}
 
 \section{実験と考察}
 
