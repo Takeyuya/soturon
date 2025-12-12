@@ -174,8 +174,6 @@ OUTPUT out/ronbun.pdf
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmsans12-regular.luc
-INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
-INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmmono10-regular.luc
 INPUT ./figures/figure1.png
 INPUT ./figures/figure1.png
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc
@@ -186,6 +184,8 @@ INPUT ./figures/flowchart_regist.png
 INPUT ./figures/flowchart_regist.png
 INPUT ./figures/flowchart_valid.png
 INPUT ./figures/flowchart_valid.png
+INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
+INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmmono10-regular.luc
 INPUT ./out/ronbun.bbl
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman10-italic.luc
