@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{here}
 \usepackage{algpseudocode}
+\usepackage{titlesec}
 
 \makeatletter
 \renewcommand{\maketitle}{%
@@ -117,6 +118,8 @@
 \def\@author{竹内 結哉}
 \def\@faculty{システム工学部}
 \makeatother
+
+\newcommand{\sectionbreak}{\clearpage}
 
 \begin{document}
 \maketitle
@@ -371,6 +374,7 @@ VCには企業のDIDによる署名が付与され,内容の真正性が保証�
 \end{algorithm}
 
 \section{実験と考察}
+本章では,本研究で構築したDID・VC・IPFS・Ethereumを用いた分散型データ管理システムについて,機能動作試験および性能評価を通してその有効性を検証する.
 
 \subsection{実験目的}
 本研究の実験目的は,提案システムが実社会の運用に耐えうる性能と有効性を備えているかを検証することである.
@@ -396,8 +400,85 @@ VCには企業のDIDによる署名が付与され,内容の真正性が保証�
 \end{itemize}
 
 \subsection{実験方法}
+本節では,本研究で構築したシステムに対して実施した実験方法を述べる.
+実験は大きく次の2段階に分けて行った.
+
+\begin{enumerate}
+  \item \textbf{機能動作試験}
+  DID Documentの登録,IoTデータのIPFSへの保存,CIDのブロックチェーンへの保存,発行者によるVC発行,検証者によるVC検証という一連の処理が正しく実行されることを確認した.
+
+  \item \textbf{性能評価}
+  システム内の主要な処理について処理時間を計測し,応答時間を評価した.
+  測定対象は以下のとおりである.
+
+  \begin{itemize}
+    \item IoTデータのIPFSアップロード時間
+    \item ブロックチェーンへのCID登録時間
+    \item VC発行処理時間
+    \item VC検証処理時間
+  \end{itemize}
+\end{enumerate}
 
 \subsection{実験結果}
+
+\subsubsection{機能動作試験の結果}
+本研究で構築したシステムが想定した一連の処理を正しく実行できるかを確認した.
+その結果,以下のすべての処理が問題なく動作した.
+
+\begin{itemize}
+  \item DIDの生成およびDID Documentのブロックチェーンへの登録(図\ref{fig:register_did})
+  \item IoTデータのIPFSへの保存およびCIDの取得(図\ref{fig:ipfs_upload})
+  \item 取得したCIDのブロックチェーンへの保存(図\ref{fig:register_cid_to_bc})
+  \item 発行者によるVCの発行(図\ref{fig:issue_vc})
+  \item ユーザAによるVCへの署名(図\ref{fig:sign_vc_by_userA})
+  \item 検証者によるVCの署名検証(図\ref{fig:validate_vc})
+\end{itemize}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/register_did.png}
+  \caption{DIDおよびDID Documentの生成・登録処理の実行結果}
+  \label{fig:register_did}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/ipfs_upload.png}
+  \caption{IPFSへのデータアップロードの実行結果}
+  \label{fig:ipfs_upload}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/register_cid_to_bc.png}
+  \caption{CIDおよびDIDのブロックチェーンへの登録処理}
+  \label{fig:register_cid_to_bc}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/issue_vc.png}
+  \caption{発行者がVCを発行する処理}
+  \label{fig:issue_vc}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/sign_vc_by_userA.png}
+  \caption{UserAがVCに署名する処理}
+  \label{fig:sign_vc_by_userA}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/validate_vc.png}
+  \caption{検証者がVCを検証する処理}
+  \label{fig:validate_vc}
+\end{figure}
+
+以上より,本研究で提案するデータとその所有者の正当性を保証するフローが一貫して成立することを確認した.
+
+\subsubsection{性能評価の結果}
 
 \subsection{考察}
 

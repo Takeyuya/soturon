@@ -159,6 +159,7 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/graphics-def/luatex.def
 INPUT c:/texlive/2024/texmf-dist/tex/latex/here/here.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT ./out/ronbun.aux
 OUTPUT out/ronbun.aux
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -186,6 +187,18 @@ INPUT ./figures/flowchart_valid.png
 INPUT ./figures/flowchart_valid.png
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmmono10-regular.luc
+INPUT ./figures/register_did.png
+INPUT ./figures/register_did.png
+INPUT ./figures/ipfs_upload.png
+INPUT ./figures/ipfs_upload.png
+INPUT ./figures/register_cid_to_bc.png
+INPUT ./figures/register_cid_to_bc.png
+INPUT ./figures/issue_vc.png
+INPUT ./figures/issue_vc.png
+INPUT ./figures/sign_vc_by_userA.png
+INPUT ./figures/sign_vc_by_userA.png
+INPUT ./figures/validate_vc.png
+INPUT ./figures/validate_vc.png
 INPUT ./out/ronbun.bbl
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman10-italic.luc

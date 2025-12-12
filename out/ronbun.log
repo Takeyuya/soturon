@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.12.13)  10 DEC 2025 16:04
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.12.13)  12 DEC 2025 17:44
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/takeu/Desktop/研究室/卒論/ronbun.tex
@@ -650,29 +650,40 @@ File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
 ))
 \Gin@req@height=\dimen177
 \Gin@req@width=\dimen178
-) (c:/texlive/2024/texmf-dist/tex/latex/here/here.sty) (./out/ronbun.aux)
+) (c:/texlive/2024/texmf-dist/tex/latex/here/here.sty) (c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box75
+\beforetitleunit=\skip58
+\aftertitleunit=\skip59
+\ttl@plus=\dimen179
+\ttl@minus=\dimen180
+\ttl@toksa=\toks35
+\titlewidth=\dimen181
+\titlewidthlast=\dimen182
+\titlewidthfirst=\dimen183
+) (./out/ronbun.aux)
 \openout1 = ronbun.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -680,69 +691,69 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 121.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 121.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 121.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 121.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 121.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 121.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 121.
-LaTeX Font Info:    Redeclaring math accent \check on input line 121.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 121.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 121.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 121.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 121.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 124.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 124.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 124.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 124.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 124.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 124.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 124.
+LaTeX Font Info:    Redeclaring math accent \check on input line 124.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 124.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 124.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 124.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 124.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 121.
+(Font)              `operators' in the math version `normal' on input line 124.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 121.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 124.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 121.
+(Font)              `operators' in the math version `bold' on input line 124.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 121.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 124.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 121.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 121.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 121.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 121.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 121.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 124.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 121.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 121.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 121.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 121.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 124.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count318
-\scratchdimen=\dimen179
-\scratchbox=\box75
+\scratchdimen=\dimen184
+\scratchbox=\box76
 \nofMPsegments=\count319
 \nofMParguments=\count320
-\everyMPshowfont=\toks35
+\everyMPshowfont=\toks36
 \MPscratchCnt=\count321
-\MPscratchDim=\dimen180
+\MPscratchDim=\dimen185
 \MPnumerator=\count322
 \makeMPintoPDFobject=\count323
-\everyMPtoPDFconversion=\toks36
+\everyMPtoPDFconversion=\toks37
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -750,104 +761,172 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))(load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 19.17853pt on input line 122.
+(Font)              scaled to size 19.17853pt on input line 125.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 19.17853pt on input line 122.
+(Font)              scaled to size 19.17853pt on input line 125.
 (load cache: extra_lmroman12-bold.luc)
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/b/n' will be
-(Font)              scaled to size 19.17853pt on input line 122.
+(Font)              scaled to size 19.17853pt on input line 125.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/b/n' will be
-(Font)              scaled to size 19.17853pt on input line 122.
+(Font)              scaled to size 19.17853pt on input line 125.
 (load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 122.
+(Font)              scaled to size 13.31586pt on input line 125.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 122.
+(Font)              scaled to size 13.31586pt on input line 125.
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 122.
+(Font)              scaled to size 15.97903pt on input line 125.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 122.
+(Font)              scaled to size 15.97903pt on input line 125.
 
 
 [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `JT3/IPAExGothic(0)/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 124.
+(Font)              scaled to size 13.31586pt on input line 127.
 LaTeX Font Info:    Font shape `JY3/IPAExGothic(0)/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 124.
+(Font)              scaled to size 13.31586pt on input line 127.
 (load cache: extra_lmsans12-regular.luc)
+
+[1
+
+]
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/b/n' will be
-(Font)              scaled to size 9.24713pt on input line 160.
+(Font)              scaled to size 9.24713pt on input line 163.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/b/n' will be
-(Font)              scaled to size 9.24713pt on input line 160.
+(Font)              scaled to size 9.24713pt on input line 163.
 
 
-[1]
+[2
+
+]
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 187.
+(Font)              scaled to size 11.09656pt on input line 190.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 187.
+(Font)              scaled to size 11.09656pt on input line 190.
 LaTeX Font Info:    Font shape `JT3/IPAExGothic(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 187.
+(Font)              scaled to size 11.09656pt on input line 190.
 LaTeX Font Info:    Font shape `JY3/IPAExGothic(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 187.
+(Font)              scaled to size 11.09656pt on input line 190.
 
 
-[2]
-<figures/figure1.png, id=20, 544.28343pt x 298.86656pt>
+[3
+
+]
+<figures/figure1.png, id=23, 965.85844pt x 541.27219pt>
 File: figures/figure1.png Graphic file (type png)
 <use figures/figure1.png>
-Package luatex.def Info: figures/figure1.png  used on input line 240.
-(luatex.def)             Requested size: 402.70839pt x 221.12585pt.
+Package luatex.def Info: figures/figure1.png  used on input line 243.
+(luatex.def)             Requested size: 402.70839pt x 225.68094pt.
 (load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 241.
+(Font)              scaled to size 8.32242pt on input line 244.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 241.
+(Font)              scaled to size 8.32242pt on input line 244.
 LaTeX Font Info:    Font shape `JT3/IPAExGothic(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 245.
+(Font)              scaled to size 9.24713pt on input line 248.
 LaTeX Font Info:    Font shape `JY3/IPAExGothic(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 245.
+(Font)              scaled to size 9.24713pt on input line 248.
 (load cache: extra_lmsans10-regular.luc)
 
-[3<./figures/figure1.png>]
-<figures/flowchart_regist.png, id=27, 1063.975pt x 2396.955pt>
+[4
+
+<./figures/figure1.png>]
+<figures/flowchart_regist.png, id=30, 1063.975pt x 2396.955pt>
 File: figures/flowchart_regist.png Graphic file (type png)
 <use figures/flowchart_regist.png>
-Package luatex.def Info: figures/flowchart_regist.png  used on input line 305.
+Package luatex.def Info: figures/flowchart_regist.png  used on input line 308.
 (luatex.def)             Requested size: 256.34955pt x 577.53348pt.
 
 
-[4]
+[5
 
-[5<./figures/flowchart_regist.png>]
-<figures/flowchart_valid.png, id=35, 653.44125pt x 1774.63pt>
+]
+
+[6<./figures/flowchart_regist.png>]
+<figures/flowchart_valid.png, id=38, 653.44125pt x 1774.63pt>
 File: figures/flowchart_valid.png Graphic file (type png)
 <use figures/flowchart_valid.png>
-Package luatex.def Info: figures/flowchart_valid.png  used on input line 339.
+Package luatex.def Info: figures/flowchart_valid.png  used on input line 342.
 (luatex.def)             Requested size: 212.65503pt x 577.53348pt.
 
 
-[6](load cache: extra_lmmono10-regular.luc)
+[7](load cache: extra_lmmono10-regular.luc)
 
-[7<./figures/flowchart_valid.png>]
+[8<./figures/flowchart_valid.png>]
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 354.
+(Font)              scaled to size 7.3977pt on input line 357.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 354.
- (./out/ronbun.bbl
+(Font)              scaled to size 7.3977pt on input line 357.
 
-[8]
 
-[9](load cache: extra_lmroman10-italic.luc)
+[9]
+
+[10
+
+]
+<figures/register_did.png, id=55, 626.34pt x 255.95625pt>
+File: figures/register_did.png Graphic file (type png)
+<use figures/register_did.png>
+Package luatex.def Info: figures/register_did.png  used on input line 439.
+(luatex.def)             Requested size: 425.0826pt x 173.71596pt.
+<figures/ipfs_upload.png, id=56, 607.51968pt x 271.0125pt>
+File: figures/ipfs_upload.png Graphic file (type png)
+<use figures/ipfs_upload.png>
+Package luatex.def Info: figures/ipfs_upload.png  used on input line 446.
+(luatex.def)             Requested size: 425.0826pt x 189.63301pt.
+<figures/register_cid_to_bc.png, id=57, 642.14906pt x 298.86656pt>
+File: figures/register_cid_to_bc.png Graphic file (type png)
+<use figures/register_cid_to_bc.png>
+Package luatex.def Info: figures/register_cid_to_bc.png  used on input line 453.
+(luatex.def)             Requested size: 425.0826pt x 197.84537pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/issue_vc.png, id=58, 591.71063pt x 295.1025pt>
+File: figures/issue_vc.png Graphic file (type png)
+<use figures/issue_vc.png>
+Package luatex.def Info: figures/issue_vc.png  used on input line 460.
+(luatex.def)             Requested size: 425.0826pt x 212.00533pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/sign_vc_by_userA.png, id=59, 705.38531pt x 497.60907pt>
+File: figures/sign_vc_by_userA.png Graphic file (type png)
+<use figures/sign_vc_by_userA.png>
+Package luatex.def Info: figures/sign_vc_by_userA.png  used on input line 467.
+(luatex.def)             Requested size: 425.0826pt x 299.87372pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/validate_vc.png, id=60, 703.87968pt x 985.43156pt>
+File: figures/validate_vc.png Graphic file (type png)
+<use figures/validate_vc.png>
+Package luatex.def Info: figures/validate_vc.png  used on input line 474.
+(luatex.def)             Requested size: 425.0826pt x 595.11284pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./out/ronbun.bbl
+
+[11<./figures/register_did.png><./figures/ipfs_upload.png>]
+
+[12<./figures/register_cid_to_bc.png><./figures/issue_vc.png>]
+
+[13<./figures/sign_vc_by_userA.png>]
+
+[14<./figures/validate_vc.png>](load cache: extra_lmroman10-italic.luc)
 LaTeX Font Info:    Kanji font shape `JY3/IPAExGothic(0)/m/it' undefined
 (Font)              No change on input line 6.
 LaTeX Font Info:    Kanji font shape `JY3/IPAExGothic(0)/m/it' undefined
 (Font)              No change on input line 11.
 )
 
-[10] (./out/ronbun.aux)
+[15
+
+] (./out/ronbun.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -855,19 +934,19 @@ L3 programming layer <2024-11-02>
 )
 
 Here is how much of LuaTeX's memory you used:
- 8168 strings out of 475630
- 244629,794899 words of node,token memory allocated
- 1021 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 190 attribute, 54 glue_spec, 28 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:51,2:73147,3:570,4:217,5:95,6:60,7:8069,9:3580,10:25,11:96
- 30844 multiletter control sequences out of 65536+600000
+ 8542 strings out of 475630
+ 195705,794899 words of node,token memory allocated
+ 1007 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 179 attribute, 56 glue_spec, 27 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:46,2:55082,3:464,4:222,5:94,6:59,7:6138,8:2,9:2758,10:25,11:96
+ 31195 multiletter control sequences out of 65536+600000
  53 fonts using 55947191 bytes
  125i,6n,131p,1973b,400s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on ronbun.pdf (11 pages, 734646 bytes).
+Output written on ronbun.pdf (16 pages, 996638 bytes).
 
-PDF statistics: 137 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+PDF statistics: 164 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
