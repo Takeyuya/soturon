@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.12.13)  12 DEC 2025 17:44
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.12.13)  14 DEC 2025 20:36
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/takeu/Desktop/研究室/卒論/ronbun.tex
@@ -909,9 +909,20 @@ Package luatex.def Info: figures/validate_vc.png  used on input line 474.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./out/ronbun.bbl
+
 
 [11<./figures/register_did.png><./figures/ipfs_upload.png>]
+LaTeX Font Info:    Calculating math sizes for size <9.12994> on input line 501.
+(load cache: extra_lmroman7-regular.luc)(load cache: extra_lmroman5-regular.luc)
+LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
+(Font)              scaled to size 6.47296pt on input line 501.
+LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 501.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./out/ronbun.bbl
 
 [12<./figures/register_cid_to_bc.png><./figures/issue_vc.png>]
 
@@ -934,16 +945,16 @@ L3 programming layer <2024-11-02>
 )
 
 Here is how much of LuaTeX's memory you used:
- 8542 strings out of 475630
+ 8566 strings out of 475630
  195705,794899 words of node,token memory allocated
- 1007 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 179 attribute, 56 glue_spec, 27 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:46,2:55082,3:464,4:222,5:94,6:59,7:6138,8:2,9:2758,10:25,11:96
- 31195 multiletter control sequences out of 65536+600000
- 53 fonts using 55947191 bytes
- 125i,6n,131p,1973b,400s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 1061 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 203 attribute, 56 glue_spec, 30 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:46,2:55055,3:464,4:222,5:94,6:59,7:6138,8:2,9:2758,10:25,11:96
+ 31219 multiletter control sequences out of 65536+600000
+ 69 fonts using 60969663 bytes
+ 125i,8n,131p,1973b,400s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on ronbun.pdf (16 pages, 996638 bytes).
+Output written on ronbun.pdf (16 pages, 1001814 bytes).
 
 PDF statistics: 164 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
