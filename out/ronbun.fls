@@ -181,12 +181,12 @@ INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmroman9-regular.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmsans10-regular.luc
-INPUT ./figures/flowchart_regist.png
-INPUT ./figures/flowchart_regist.png
-INPUT ./figures/flowchart_valid.png
-INPUT ./figures/flowchart_valid.png
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_lmmono10-regular.luc
+INPUT ./figures/flowchart_regist.png
+INPUT ./figures/flowchart_regist.png
+INPUT ./figures/flowchart_valid.png
+INPUT ./figures/flowchart_valid.png
 INPUT ./figures/register_did.png
 INPUT ./figures/register_did.png
 INPUT ./figures/ipfs_upload.png
