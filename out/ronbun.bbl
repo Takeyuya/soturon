@@ -1,13 +1,13 @@
 \begin{thebibliography}{1}
 
-\bibitem{cite2}
-Simon Krejci, Marten Sigwart, and Stefan Schulte.
-\newblock Blockchain- and {IPFS}-based data distribution for the internet of things.
-\newblock In Antonio Brogi, Wolf Zimmermann, and Kyriakos Kritikos, editors, {\em Service-Oriented and Cloud Computing}, pp. 177--191, Cham, 2020. Springer International Publishing.
-
 \bibitem{cite1}
 Muhammad~Salek Ali, Koustabh Dolui, and Fabio Antonelli.
 \newblock Io{T} data privacy via blockchains and {IPFS}.
 \newblock In {\em Proceedings of the Seventh International Conference on the Internet of Things}, IoT '17, New York, NY, USA, 2017. Association for Computing Machinery.
+
+\bibitem{cite2}
+Simon Krejci, Marten Sigwart, and Stefan Schulte.
+\newblock Blockchain- and {IPFS}-based data distribution for the {I}nternet of things.
+\newblock In Antonio Brogi, Wolf Zimmermann, and Kyriakos Kritikos, editors, {\em Service-Oriented and Cloud Computing}, pp. 177--191, Cham, 2020. Springer International Publishing.
 
 \end{thebibliography}
