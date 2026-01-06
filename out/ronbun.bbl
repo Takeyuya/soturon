@@ -10,4 +10,14 @@ Simon Krejci, Marten Sigwart, and Stefan Schulte.
 \newblock Blockchain- and {IPFS}-based data distribution for the {I}nternet of things.
 \newblock In Antonio Brogi, Wolf Zimmermann, and Kyriakos Kritikos, editors, {\em Service-Oriented and Cloud Computing}, pp. 177--191, Cham, 2020. Springer International Publishing.
 
+\bibitem{cite3}
+Ehtisham~Ul Haque, Adil Shah, Jawaid Iqbal, Syed~Sajid Ullah, Roobaea Alroobaea, and Saddam Hussain.
+\newblock A scalable blockchain based framework for efficient {IoT} data management using lightweight consensus.
+\newblock {\em Scientific Reports}, Vol.~14, No.~1, p. 7841, April 2024.
+
+\bibitem{cite4}
+Ehtisham~Ul Haque, Waseem Abbasi, Ahmad Almogren, Jaeyoung Choi, Ayman Altameem, Ateeq~Ur Rehman, and Habib Hamam.
+\newblock Performance enhancement in blockchain based {IoT} data sharing using lightweight consensus algorithm.
+\newblock {\em Scientific Reports}, Vol.~14, No.~1, p. 26561, November 2024.
+
 \end{thebibliography}
