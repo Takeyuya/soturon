@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex out/ronbun"] 1767689722.6463 "out/ronbun.aux" "out/ronbun.bbl" "out/ronbun" 1767689733.3449 0
-  "./references.bib" 1767689466 6703 c69d4876533de4ae89a7b93aa0ec4b36 ""
+["bibtex out/ronbun"] 1767776502.38435 "out/ronbun.aux" "out/ronbun.bbl" "out/ronbun" 1767776538.26385 0
+  "./references.bib" 1767773471 9010 be1eb158ea7fbc0a26e1316fa6cadc91 ""
   "junsrt.bst" 0 -1 0 ""
-  "out/ronbun.aux" 1767689730 7190 03460d572041c8b7ed16ac3b3af2768b "lualatex"
+  "out/ronbun.aux" 1767776534 7620 76cca1fa7993dd7b5c9976dd88f263d8 "lualatex"
   (generated)
   "out/ronbun.bbl"
   "out/ronbun.blg"
   (rewritten before read)
-["lualatex"] 1767689723.52326 "c:/Users/takeu/Desktop/研究室/卒論/ronbun.tex" "out/ronbun.pdf" "ronbun" 1767689733.3459 0
+["lualatex"] 1767776521.19195 "c:/Users/takeu/Desktop/研究室/卒論/ronbun.tex" "out/ronbun.pdf" "ronbun" 1767776538.26538 0
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_haranoajigothic-medium.luc" 1755256921 321567 fe953ead66a4762c19293edee7952982 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_haranoajimincho-regular.luc" 1755256914 322628 02ec61d1b47f0d1cd67a60e6a9568ef7 ""
   "C:/Users/takeu/.texlive2024/texmf-var/luatexja/extra_ipaexgothic.luc" 1755340500 320653 aa47c91791d492097f2a75642e5179f8 ""
@@ -49,7 +49,7 @@
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.luc" 1755256921 128157 9155534ef79335904b884167d49a0aef ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1767688206 4523 b2ae20659fe9654f866a3d7864941810 ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1755256905 320663 e4e8eab2c9c6e782e872b319fe771467 ""
-  "c:/Users/takeu/Desktop/研究室/卒論/ronbun.tex" 1767689700 42546 03edf3ec8e17e0c282ba2fa6ad63e736 ""
+  "c:/Users/takeu/Desktop/研究室/卒論/ronbun.tex" 1767776513 43729 bb9d1d75b411f89e9d3349a027115527 ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1734072300 64684 c6f5a48921f83c1a51d9384f785ddd5a ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1734072300 111240 1d60e9def74b1102bb4defa7cb772ee3 ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1734072300 118828 5d91d27a335c65bda4818de63abc25ce ""
@@ -211,6 +211,8 @@
   "c:/texlive/2024/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1734071951 5585 8e4615c54073c390d14154b29cee89cb ""
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1734074858 5531417 afafd3ba8f822fda36e3585e3807683b ""
   "c:/texlive/2024/texmf-var/web2c/luahbtex/lualatex.fmt" 1734075076 5647631 d4e062acbaf00a906c475a7c22e960b8 ""
+  "figures/experiment_environment.png" 1767773088 13625993 64a43255c563ca06b9657819b9422e66 ""
+  "figures/experiment_environment_figure.png" 1767772387 95055 1e274d9f28c81c82330111d009c8ecd2 ""
   "figures/figure1.png" 1766668632 125552 47d995df55090f7fbfce617677cf9dd6 ""
   "figures/flowchart_regist.png" 1765090000 222370 d798a54f34c741bc7ceb8d4f145c4ed3 ""
   "figures/flowchart_valid.png" 1765089458 106335 65b4f7685eef6a9e503ed2e21f745207 ""
@@ -220,10 +222,10 @@
   "figures/register_did.png" 1765518004 31187 89fab014b37bc25051963dda7bca09f1 ""
   "figures/sign_vc_by_userA.png" 1765525886 72237 d3f3c6fe600e9a50453a9299bdf8913f ""
   "figures/validate_vc.png" 1765527391 178374 af58aae2a441177c02f97ed29a7cd0dd ""
-  "out/ronbun.aux" 1767689730 7190 03460d572041c8b7ed16ac3b3af2768b "lualatex"
-  "out/ronbun.bbl" 1767689723 1311 f2410d3bc651b288b039f0909a047853 "bibtex out/ronbun"
-  "out/ronbun.toc" 1767689730 2708 9840a7c37f4c4c90f4377224a9b1ca33 "lualatex"
-  "ronbun.tex" 1767689700 42546 03edf3ec8e17e0c282ba2fa6ad63e736 ""
+  "out/ronbun.aux" 1767776534 7620 76cca1fa7993dd7b5c9976dd88f263d8 "lualatex"
+  "out/ronbun.bbl" 1767776503 1579 ca7dd8d655be09b21988d070fcc6f627 "bibtex out/ronbun"
+  "out/ronbun.toc" 1767776534 2708 ffa331324b7c1c2dd5ac72c56c9c37c1 "lualatex"
+  "ronbun.tex" 1767776513 43729 bb9d1d75b411f89e9d3349a027115527 ""
   (generated)
   "out/ronbun.aux"
   "out/ronbun.log"
