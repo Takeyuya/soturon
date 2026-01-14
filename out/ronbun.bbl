@@ -1,4 +1,44 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{cite6}
+Jayavardhana Gubbi, Rajkumar Buyya, Slaven Marusic, and Marimuthu Palaniswami.
+\newblock Internet of things (iot): A vision, architectural elements, and future directions.
+\newblock {\em Future Generation Computer Systems}, Vol.~29, No.~7, pp. 1645--1660, 2013.
+\newblock Including Special sections: Cyber-enabled Distributed Computing for Ubiquitous Cloud and Network Services \& Cloud Computing and Scientific Applications — Big Data, Scalable Analytics, and Beyond.
+
+\bibitem{cite7}
+Juan Benet.
+\newblock Ipfs - content addressed, versioned, p2p file system, 2014.
+
+\bibitem{cite9}
+Han Liu, Dezhi Han, and Dun Li.
+\newblock Fabric-iot: A blockchain-based access control system in iot.
+\newblock {\em IEEE Access}, Vol.~8, pp. 18207--18218, 2020.
+
+\bibitem{cite10}
+Ma~Zhaofeng, Wang Lingyun, Wang Xiaochang, Wang Zhen, and Zhao Weizhe.
+\newblock Blockchain-enabled decentralized trust management and secure usage control of iot big data.
+\newblock {\em IEEE Internet of Things Journal}, Vol.~7, No.~5, pp. 4000--4015, 2020.
+
+\bibitem{cite11}
+Ana Reyna, Cristian Martín, Jaime Chen, Enrique Soler, and Manuel Díaz.
+\newblock On blockchain and its integration with iot. challenges and opportunities.
+\newblock {\em Future Generation Computer Systems}, Vol.~88, pp. 173--190, 2018.
+
+\bibitem{cite12}
+Pradnya Patil, M.~Sangeetha, and Vidhyacharan Bhaskar.
+\newblock Blockchain for {IoT} {Access} {Control}, {Security} and {Privacy}: {A} {Review}.
+\newblock {\em Wireless Personal Communications}, Vol. 117, No.~3, pp. 1815--1834, April 2021.
+
+\bibitem{cite13}
+Gbadebo Ayoade, Vishal Karande, Latifur Khan, and Kevin Hamlen.
+\newblock Decentralized iot data management using blockchain and trusted execution environment.
+\newblock In {\em 2018 IEEE International Conference on Information Reuse and Integration (IRI)}, pp. 15--22, 2018.
+
+\bibitem{cite8}
+{World Wide Web Consortium(W3C)}.
+\newblock Decentralized identifiers (dids) v1.1.
+\newblock https://www.w3.org/TR/did-1.1/, 2026.
 
 \bibitem{cite1}
 Muhammad~Salek Ali, Koustabh Dolui, and Fabio Antonelli.
