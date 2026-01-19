@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.12.13)  16 JAN 2026 15:10
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.12.13)  19 JAN 2026 18:23
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/takeu/Desktop/研究室/卒論/ronbun.tex
@@ -837,137 +837,150 @@ LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/b/n' will be
 [3
 
 ]
-
-[4]
-
-[5
-
-]
+<figures/centralizedfigures.png, id=24, 523.20468pt x 406.51875pt>
+File: figures/centralizedfigures.png Graphic file (type png)
+<use figures/centralizedfigures.png>
+Package luatex.def Info: figures/centralizedfigures.png  used on input line 230.
+(luatex.def)             Requested size: 402.70839pt x 312.90254pt.
+(load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 297.
+(Font)              scaled to size 8.32242pt on input line 231.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 297.
-LaTeX Font Info:    Font shape `JT3/IPAExGothic(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 297.
-LaTeX Font Info:    Font shape `JY3/IPAExGothic(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 297.
+(Font)              scaled to size 8.32242pt on input line 231.
+<figures/DIDfigures.png, id=25, 636.87938pt x 386.19281pt>
+File: figures/DIDfigures.png Graphic file (type png)
+<use figures/DIDfigures.png>
+Package luatex.def Info: figures/DIDfigures.png  used on input line 237.
+(luatex.def)             Requested size: 402.70839pt x 244.19257pt.
 
+
+[4<./figures/centralizedfigures.png>]
+
+[5<./figures/DIDfigures.png>]
 
 [6
 
 ]
-<figures/figure1.png, id=33, 959.83594pt x 541.27219pt>
-File: figures/figure1.png Graphic file (type png)
-<use figures/figure1.png>
-Package luatex.def Info: figures/figure1.png  used on input line 355.
-(luatex.def)             Requested size: 402.70839pt x 227.09325pt.
-(load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 356.
+(Font)              scaled to size 11.09656pt on input line 320.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 356.
+(Font)              scaled to size 11.09656pt on input line 320.
+LaTeX Font Info:    Font shape `JT3/IPAExGothic(0)/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 320.
+LaTeX Font Info:    Font shape `JY3/IPAExGothic(0)/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 320.
 
 
 [7
 
+]
+<figures/figure1.png, id=41, 959.83594pt x 541.27219pt>
+File: figures/figure1.png Graphic file (type png)
+<use figures/figure1.png>
+Package luatex.def Info: figures/figure1.png  used on input line 378.
+(luatex.def)             Requested size: 402.70839pt x 227.09325pt.
+
+
+[8
+
 <./figures/figure1.png>](load cache: extra_lmmono10-regular.luc)
 
-[8]
-<figures/flowchart_regist.png, id=43, 1063.975pt x 2396.955pt>
+[9]
+<figures/flowchart_regist.png, id=50, 1063.975pt x 2396.955pt>
 File: figures/flowchart_regist.png Graphic file (type png)
 <use figures/flowchart_regist.png>
-Package luatex.def Info: figures/flowchart_regist.png  used on input line 442.
+Package luatex.def Info: figures/flowchart_regist.png  used on input line 465.
 (luatex.def)             Requested size: 256.34955pt x 577.53348pt.
 
 
-[9]
+[10]
 
-[10<./figures/flowchart_regist.png>]
-<figures/flowchart_valid.png, id=52, 653.44125pt x 1774.63pt>
+[11<./figures/flowchart_regist.png>]
+<figures/flowchart_valid.png, id=59, 653.44125pt x 1774.63pt>
 File: figures/flowchart_valid.png Graphic file (type png)
 <use figures/flowchart_valid.png>
-Package luatex.def Info: figures/flowchart_valid.png  used on input line 478.
+Package luatex.def Info: figures/flowchart_valid.png  used on input line 501.
 (luatex.def)             Requested size: 212.65503pt x 577.53348pt.
 
 
-[11]
+[12]
 
-[12<./figures/flowchart_valid.png>]
+[13<./figures/flowchart_valid.png>]
 LaTeX Font Info:    Font shape `JT3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 493.
+(Font)              scaled to size 7.3977pt on input line 516.
 LaTeX Font Info:    Font shape `JY3/IPAExMincho(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 493.
+(Font)              scaled to size 7.3977pt on input line 516.
 
 
-[13]
-<figures/experiment_environment.png, id=64, 4300.065pt x 3959.79375pt>
+[14]
+<figures/experiment_environment.png, id=71, 4300.065pt x 3959.79375pt>
 File: figures/experiment_environment.png Graphic file (type png)
 <use figures/experiment_environment.png>
-Package luatex.def Info: figures/experiment_environment.png  used on input line 558.
+Package luatex.def Info: figures/experiment_environment.png  used on input line 581.
 (luatex.def)             Requested size: 313.21838pt x 288.39186pt.
 
 
-[14
+[15
 
 ]
-<figures/experiment_environment_figure.png, id=68, 860.46469pt x 487.8225pt>
+<figures/experiment_environment_figure.png, id=75, 860.46469pt x 487.8225pt>
 File: figures/experiment_environment_figure.png Graphic file (type png)
 <use figures/experiment_environment_figure.png>
-Package luatex.def Info: figures/experiment_environment_figure.png  used on input line 565.
+Package luatex.def Info: figures/experiment_environment_figure.png  used on input line 588.
 (luatex.def)             Requested size: 402.70839pt x 228.30894pt.
 
 
-[15<./figures/experiment_environment.png><./figures/experiment_environment_figure.png>]
-<figures/register_did.png, id=74, 626.34pt x 255.95625pt>
+[16<./figures/experiment_environment.png><./figures/experiment_environment_figure.png>]
+<figures/register_did.png, id=81, 626.34pt x 255.95625pt>
 File: figures/register_did.png Graphic file (type png)
 <use figures/register_did.png>
-Package luatex.def Info: figures/register_did.png  used on input line 643.
+Package luatex.def Info: figures/register_did.png  used on input line 666.
 (luatex.def)             Requested size: 425.0826pt x 173.71596pt.
 
 
-[16]
-<figures/ipfs_upload.png, id=78, 607.51968pt x 271.0125pt>
+[17]
+<figures/ipfs_upload.png, id=85, 607.51968pt x 271.0125pt>
 File: figures/ipfs_upload.png Graphic file (type png)
 <use figures/ipfs_upload.png>
-Package luatex.def Info: figures/ipfs_upload.png  used on input line 650.
+Package luatex.def Info: figures/ipfs_upload.png  used on input line 673.
 (luatex.def)             Requested size: 425.0826pt x 189.63301pt.
-<figures/register_cid_to_bc.png, id=79, 642.14906pt x 298.86656pt>
+<figures/register_cid_to_bc.png, id=86, 642.14906pt x 298.86656pt>
 File: figures/register_cid_to_bc.png Graphic file (type png)
 <use figures/register_cid_to_bc.png>
-Package luatex.def Info: figures/register_cid_to_bc.png  used on input line 657.
+Package luatex.def Info: figures/register_cid_to_bc.png  used on input line 680.
 (luatex.def)             Requested size: 425.0826pt x 197.84537pt.
 
 
-[17<./figures/register_did.png><./figures/ipfs_upload.png>]
-<figures/issue_vc.png, id=85, 591.71063pt x 295.1025pt>
+[18<./figures/register_did.png><./figures/ipfs_upload.png>]
+<figures/issue_vc.png, id=92, 591.71063pt x 295.1025pt>
 File: figures/issue_vc.png Graphic file (type png)
 <use figures/issue_vc.png>
-Package luatex.def Info: figures/issue_vc.png  used on input line 664.
+Package luatex.def Info: figures/issue_vc.png  used on input line 687.
 (luatex.def)             Requested size: 425.0826pt x 212.00533pt.
-<figures/sign_vc_by_userA.png, id=86, 705.38531pt x 497.60907pt>
+<figures/sign_vc_by_userA.png, id=93, 705.38531pt x 497.60907pt>
 File: figures/sign_vc_by_userA.png Graphic file (type png)
 <use figures/sign_vc_by_userA.png>
-Package luatex.def Info: figures/sign_vc_by_userA.png  used on input line 671.
+Package luatex.def Info: figures/sign_vc_by_userA.png  used on input line 694.
 (luatex.def)             Requested size: 425.0826pt x 299.87372pt.
 
 
-[18<./figures/register_cid_to_bc.png><./figures/issue_vc.png>]
-<figures/validate_vc.png, id=92, 703.87968pt x 985.43156pt>
+[19<./figures/register_cid_to_bc.png><./figures/issue_vc.png>]
+<figures/validate_vc.png, id=99, 703.87968pt x 985.43156pt>
 File: figures/validate_vc.png Graphic file (type png)
 <use figures/validate_vc.png>
-Package luatex.def Info: figures/validate_vc.png  used on input line 678.
+Package luatex.def Info: figures/validate_vc.png  used on input line 701.
 (luatex.def)             Requested size: 425.0826pt x 595.11284pt.
 
 
-[19<./figures/sign_vc_by_userA.png>]
+[20<./figures/sign_vc_by_userA.png>]
 
-[20<./figures/validate_vc.png>]
+[21<./figures/validate_vc.png>]
 
-[21]
+[22]
 
-[22] (./out/ronbun.bbl
+[23] (./out/ronbun.bbl
 
-[23
+[24
 
 ](load cache: extra_lmroman10-italic.luc)
 LaTeX Font Info:    Kanji font shape `JY3/IPAExGothic(0)/m/it' undefined
@@ -994,7 +1007,7 @@ LaTeX Font Info:    Kanji font shape `JY3/IPAExGothic(0)/m/it' undefined
 (Font)              No change on input line 66.
 )
 
-[24
+[25
 
 ] (./out/ronbun.aux)
  ***********
@@ -1004,19 +1017,19 @@ L3 programming layer <2024-11-02>
 )
 
 Here is how much of LuaTeX's memory you used:
- 9114 strings out of 475630
+ 9136 strings out of 475630
  305799,794899 words of node,token memory allocated
  1007 words of node memory still in use:
    10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 179 attribute, 56 glue_spec, 27 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:19,2:83052,3:553,4:283,5:408,6:54,7:9121,8:4,9:4111,10:46,11:416
- 31739 multiletter control sequences out of 65536+600000
+   avail lists: 1:20,2:89670,3:558,4:283,5:408,6:54,7:9809,8:4,9:4439,10:52,11:416
+ 31755 multiletter control sequences out of 65536+600000
  69 fonts using 60969663 bytes
  125i,8n,131p,1973b,402s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf><c:/texlive/2024/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on ronbun.pdf (25 pages, 18575100 bytes).
+Output written on ronbun.pdf (26 pages, 18640462 bytes).
 
-PDF statistics: 197 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+PDF statistics: 204 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
